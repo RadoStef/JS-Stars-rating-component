@@ -8,11 +8,11 @@
     <title>Star rating component</title>
 </head>
 <body>
-    <div class="container container2">
+    <div id='theme-container' class="container container2">
         <h3>Change page theme</h3>
         <div class="icon">
             <div>
-            <img src="./img/icons8-sun-star-50.png" alt="Day theme">
+            <img src="./img/icons8-sun-star-50.png" alt="Day theme" class="day">
             <img src="./img/icons8-moon-and-stars-100.png" alt="Night theme" class="hidden">
             <img src="./img/icons8-superhero-48.png" alt="Boy theme" class="hidden">
             <img src="./img/icons8-girl-48.png" alt="Day theme" class="hidden">  
@@ -24,21 +24,20 @@
         <div class="btns">
             <button id="day--theme"> Day </button>
             <button id="night--theme"> Night </button>
-            <button id="strong--boy"> Boy </button>
-            <button id="cute--girl"> Girl </button>
+            <button id="boy--theme"> Boy </button>
+            <button id="girl--theme"> Girl </button>
         </div>
     </div>
-    <div class="container">
+    <div id='vote-container' class="container">
         <div class="info">
-            <div class="emoji">😀</div>
-            <div class="status">Good</div>
+            <div class="emoji">✨</div>
+            <div class="status">Please, rate this page.</div>
         </div>
         <div class="stars">
             <div class="star" data-rate="5">
-                1
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve" width="24" height="24">
-                <path style="fill:#ED8A19;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve">
+                <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
 	            c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
 	            c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
 	            c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
@@ -46,11 +45,10 @@
 	            C22.602,0.567,25.338,0.567,26.285,2.486z"/>
                 </svg>
             </div>
-            <div class="star" data-rate="5">
-                2
+            <div class="star" data-rate="4">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve" width="24" height="24">
-                <path style="fill:#ED8A19;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve">
+                <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
 	            c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
 	            c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
 	            c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
@@ -58,11 +56,10 @@
 	            C22.602,0.567,25.338,0.567,26.285,2.486z"/>
                 </svg>
             </div>
-            <div class="star" data-rate="5">
-                3
+            <div class="star" data-rate="3">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve" width="24" height="24">
-                <path style="fill:#ED8A19;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve">
+                <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
 	            c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
 	            c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
 	            c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
@@ -70,11 +67,10 @@
 	            C22.602,0.567,25.338,0.567,26.285,2.486z"/>
                 </svg>
             </div>
-            <div class="star" data-rate="5">
-                4
+            <div class="star" data-rate="2">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve" width="24" height="24">
-                <path style="fill:#ED8A19;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve">
+                <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
 	            c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
 	            c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
 	            c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
@@ -82,11 +78,10 @@
 	            C22.602,0.567,25.338,0.567,26.285,2.486z"/>
                 </svg>
             </div>
-            <div class="star" data-rate="5">
-                5
+            <div class="star" data-rate="1">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve" width="24" height="24">
-                <path style="fill:#ED8A19;" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
+	            viewBox="0 0 47.94 47.94" style="enable-background:new 0 0 47.94 47.94;" xml:space="preserve">
+                <path d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757
 	            c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042
 	            c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685
 	            c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528
@@ -94,6 +89,9 @@
 	            C22.602,0.567,25.338,0.567,26.285,2.486z"/>
                 </svg>
             </div>
+        </div>
+        <div class="statistics">
+
         </div>
     </div>
     <script src="main.js"></script>

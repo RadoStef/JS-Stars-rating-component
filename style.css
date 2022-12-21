@@ -7,8 +7,8 @@
 }
 
 img {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 25px;
 }
 
@@ -111,7 +111,7 @@ button:hover {
 
 .stars {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
@@ -119,4 +119,37 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+.star svg {
+    width: 24px;
+    height: 24px;
+    stroke: none;
+    fill: #afa3a3;
+    margin: 10px 10px 0 10px;
+}
+
+.star:hover svg {
+    width: 24px;
+    height: 24px;
+    stroke: none;
+    margin: 10px 10px 0 10px;
+    fill: #ED8A19;
+}
+
+.star:hover svg,
+.star:hover ~ .star svg {
+    fill: #ED8A19;
+}
+
+.selected svg,
+.selected ~ .star svg {
+    width: 24px;
+    height: 24px;
+    fill: #ED8A19
+}
+
+.statistics {
+    margin-top: 30px;
+    color: #ff8800;
 }
