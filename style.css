@@ -1,7 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Monda&family=Poppins:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    flex-direction: column;
+}
+
+.icon a {
+    font-size: 10px;
+    color: #afa3a3;
+}
+.icon a:hover {
+    color: #333;
 }
 
 body {
@@ -11,14 +36,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #f1f1f1;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;
 }
-
-
 
 .btns {
     width: 90%;
     margin-left: 5%;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +79,15 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+
+.container::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .container:hover {
@@ -82,4 +115,8 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+}
+
+.hidden {
+    display: none;
 }
