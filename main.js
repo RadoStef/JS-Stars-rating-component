@@ -1,22 +1,51 @@
-const bodyEl = document.getElementsByTagName('body');
+// body and sections 
+const bodyEl = document.querySelector('.body');
 const themeContainerEl = document.getElementById('theme-container');
 const voteContainerEl = document.getElementById('vote-container');
 
+// theme btn-s
 const dayThemeBtn = document.getElementById('day--theme');
 const nightThemeBtn = document.getElementById('night--theme');
-const boyThemeEl = document.getElementById('boy--theme');
-const girlThemeEl = document.getElementById('girl--theme');
 
+// rating app elements
 const stars = document.querySelectorAll('.star');
 const emojiEl = document.querySelector('.emoji');
 const statusEl = document.querySelector('.status');
 const statisticsEl = document.querySelector('.statistics');
 
+// image elements
+const sunImage = document.getElementById('sun');
+const moonImage = document.getElementById('moon');
+
+// indexes
 const defaultRatingIndex = 0;
 let currentRatingIndex = 0;
 let ratedTimes = Math.floor(Math.random() * 565 - 1);
 
 statisticsEl.innerHTML = `This page was rated <strong>${ratedTimes}</strong> times.`
+
+// night-theme function
+const switchToNightTheme = () => {
+    bodyEl.classList.remove('body');
+    bodyEl.classList.add('body-night');
+    sunImage.classList.add('hidden');
+    moonImage.classList.remove('hidden');
+    nightThemeBtn.classList.add('active-theme-btn');
+    dayThemeBtn.classList.remove('active-theme-btn');
+    themeContainerEl.style.background = '#333';
+    themeContainerEl.style.color = '#f1f1f1';
+};
+
+const switchToDayTheme = () => {
+    bodyEl.classList.add('body');
+    bodyEl.classList.remove('body-night');
+    sunImage.classList.remove('hidden');
+    moonImage.classList.add('hidden');
+    dayThemeBtn.classList.add('active-theme-btn');
+    nightThemeBtn.classList.remove('active-theme-btn'); 
+    themeContainerEl.style.background = '#f4f4f4';
+    themeContainerEl.style.color = '#000';
+};
 
 const ratings = [
     {emoji: '✨', status: 'Please, rate this page.'},
@@ -69,3 +98,7 @@ stars.forEach((star) => {
         setRating(currentRatingIndex);
     });
 });
+
+nightThemeBtn.addEventListener('click', switchToNightTheme);
+dayThemeBtn.addEventListener('click', switchToDayTheme);
+

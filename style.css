@@ -29,13 +29,23 @@ img {
     color: #333;
 }
 
-body {
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
     background-color: #f1f1f1;
+    font-family: Poppins, sans-serif;
+}
+
+.body-night {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
     font-family: Poppins, sans-serif;
 }
 
@@ -152,4 +162,17 @@ button:hover {
 .statistics {
     margin-top: 30px;
     color: #ff8800;
+}
+
+.active-theme-btn {
+    padding: 20px;
+    width: 20%;
+    border-radius: 5px;
+    background: none;
+    color: #000;
+}
+
+.active-theme-btn:hover {
+    cursor: pointer;
+    background: none;
 }

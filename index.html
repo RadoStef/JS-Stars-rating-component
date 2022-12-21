@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Star rating component</title>
 </head>
-<body>
+<body class="body">
     <div id='theme-container' class="container container2">
         <h3>Change page theme</h3>
         <div class="icon">
             <div>
-            <img src="./img/icons8-sun-star-50.png" alt="Day theme" class="day">
-            <img src="./img/icons8-moon-and-stars-100.png" alt="Night theme" class="hidden">
-            <img src="./img/icons8-superhero-48.png" alt="Boy theme" class="hidden">
-            <img src="./img/icons8-girl-48.png" alt="Day theme" class="hidden">  
+            <img src="./img/icons8-sun-star-50.png" alt="Day theme" id="sun">
+            <img src="./img/icons8-moon-and-stars-100.png" alt="Night theme" id='moon' class="hidden">
             </div>
             <div>
                <a target="_blank" href="https://icons8.com">Icon from Icons8</a> 
@@ -24,8 +22,6 @@
         <div class="btns">
             <button id="day--theme"> Day </button>
             <button id="night--theme"> Night </button>
-            <button id="boy--theme"> Boy </button>
-            <button id="girl--theme"> Girl </button>
         </div>
     </div>
     <div id='vote-container' class="container">
